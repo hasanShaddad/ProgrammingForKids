@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+  <table cellpadding="0" cellspacing="0" width="20%">
+    <tr>
+
+      <td>
+        <p id="caw">.................</p>
+      </td>
+      <td>
+        <img src="caw.jpg" width="100" height="100">
+      </td>
+    </tr>
+    <tr>
+
+      <td>
+        <p id="owl">...................</p>
+      </td>
+      <td>
+        <img src="owl.jpg" width="100" height="100">
+      </td>
+    </tr>
+  </table>
+
+  <button type="button" onClick="playTheGame()">play</button>
+  <script>
+    function playTheGame() {
+      say("caw", "hiiiiiiii", 1000);
+      say("owl", "how are you", 2000);
+      say("caw", "fine thanx", 4000);
+    }
+
+    function say(animal, txt, waitingTime) {
+
+      setTimeout(function () {
+        document.getElementById(animal).innerHTML = txt;
+      }, waitingTime);
+
+
+    }
+  </script>
+
+</body>
+
+</html>
